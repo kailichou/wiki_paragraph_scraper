@@ -8,7 +8,7 @@ class wikispider:
 
     def download(self,url):
         print("Start downloading page")
-        return requests.get(self).text
+        return requests.get(url).text
 
     def parse_paragraph(self,content,parser='html.parser'):
         html=soup(content,parser)
